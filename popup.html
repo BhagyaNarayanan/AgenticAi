@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SyncStream</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>SyncStream</h1>
+      <p class="hint"><strong>YouTube only.</strong> Open a YouTube watch tab first, then host or guest here. The main player is chosen by size (including inside the player’s shadow tree). Same Wi‑Fi is not required.</p>
+
+      <section>
+        <h2>Host</h2>
+        <button type="button" id="btnHost">Start as host</button>
+        <div id="hostPanel" class="panel hidden">
+          <label>Your Peer ID (share with guest)</label>
+          <div class="row">
+            <input type="text" id="hostId" readonly />
+            <button type="button" id="btnCopy" title="Copy">Copy</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Guest</h2>
+        <label for="remoteId">Host Peer ID</label>
+        <input type="text" id="remoteId" placeholder="e.g. ss-1a2b3c4d5e6f708192a" autocomplete="off" />
+        <button type="button" id="btnGuest">Connect as guest</button>
+      </section>
+
+      <section class="footer-actions">
+        <button type="button" id="btnDisconnect" class="secondary">Disconnect</button>
+        <span id="status" class="status"></span>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
