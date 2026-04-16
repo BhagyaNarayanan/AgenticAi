@@ -1,0 +1,6 @@
+{
+  "name": "SkyGuide: Weather-Smart Travel Advisor",
+  "description": "Get personalized travel advice, packing lists, and activity suggestions based on the current weather in your destination city. Powered by Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

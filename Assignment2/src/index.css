@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", "Arial", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", serif;
+  --font-display: "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-natural-bg: #fdfcf8;
+  --color-natural-ink: #2d2d2a;
+  --color-natural-muted: #5a6e4d;
+  --color-natural-sage: #8da183;
+  --color-natural-sand: #e6dfcf;
+  --color-natural-earth: #c88a6d;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-natural-ink bg-natural-bg min-h-screen;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
